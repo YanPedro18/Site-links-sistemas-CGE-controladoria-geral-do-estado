@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas | CGE</title>
+    <!--animações scrolljs-->
+    <link rel="shortcut icon" href="img/Logo-CGE.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <main class="main">
+        <section class="container">
+            <div class="sect-01-flex">
+                <img src="img/Logo-CGE.png" alt="">
+                <!---Logo CGE-->
+                <h1>Sistemas Corporativos</h1>
+            </div>
+            <div class="nav-pesquisa">
+                <!---caixa de pesquisa-->
+                <div id="searchUsers" class="instant-search">
+                    <div class="instant-search__input-container">
+                        <input class="instant-search__input" onkeyup="filter_list()" id="myInput" type="text"
+                            spellcheck="false" placeholder="Digite aqui">
+                        <i class="material-icons instant-search__icon">search</i>
+                    </div>
+                </div>
+        </section>
+        <section class="container-02">
+            <!---Caixa de links-->
+            <div class="sect-02-flex">
+                <div class="box-search">
+                    <ul class="list" id="my-list">
+                        <!---lista/classe usada no JS-->
+                        <li>
+                            <a href="http://agatha.cge.mg.gov.br/" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Agatha</span>
+                                    <span class="text-url">agatha.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://caexcge.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">CAEX</span>
+                                    <span class="text-url">caexcge.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://chat.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">CHAT</span>
+                                    <span class="text-url">chat.cge.mg.gov.br </span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dados.mg.gov.br/" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">CKAN</span>
+                                    <span class="text-url">dados.mg.gov.br/</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://conselhodeetica.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">CONSET</span>
+                                    <span class="text-url">conselhodeetica.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined" target="_blank">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://capacita.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Capacita</span>
+                                    <span class="text-url">capacita.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://certidao.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Certidão</span>
+                                    <span class="text-url">certidao.cge.mg.gov.br </span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sistemas.cge.mg.gov.br/consulta/web" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Consulta</span>
+                                    <span class="text-url">sistemas.cge.mg.gov.br/consulta/web</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://eventos.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Eventos</span>
+                                    <span class="text-url">eventos.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://atendimento.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">GLPI</span>
+                                    <span class="text-url">atendimento.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://intranet.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Intranet</span>
+                                    <span class="text-url">intranet.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://lgpd.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">LGPD</span>
+                                    <span class="text-url">lgpd.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://contatos.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Lista de Contatos</span>
+                                    <span class="text-url">contatos.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ead.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Moodle - EAD CGE</span>
+                                    <span class="text-url">ead.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pmpi.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">PMPI</span>
+                                    <span class="text-url">pmpi.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Portal - CGE</span>
+                                    <span class="text-url">cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://portaldosconselhos.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Portal dos Conselhos</span>
+                                    <span class="text-url">portaldosconselhos.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sistemas.cge.mg.gov.br/oitiva/web" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Reserva de Salas - Oitivas</span>
+                                    <span class="text-url">sistemas.cge.mg.gov.br/oitiva/web</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.siga.cge.mg.gov.br/siga" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">SIGA</span>
+                                    <span class="text-url">siga.cge.mg.gov.br/siga</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://sinau.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">SINAU</span>
+                                    <span class="text-url">sinau.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sisden.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">SISDEN (Antigo)</span>
+                                    <span class="text-url">sisden.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://denuncia.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">SISDEN (Novo)</span>
+                                    <span class="text-url">denuncia.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sisgp.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">SISGP</span>
+                                    <span class="text-url">sisgp.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sispmpi.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">SISPMPI</span>
+                                    <span class="text-url">sispmpi.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://gestaodedemandas.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Sistema de Gestão de Demandas</span>
+                                    <span class="text-url">gestaodedemandas.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://matrizderisco.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Sistema de Matriz de Risco Integrada</span>
+                                    <span class="text-url">matrizderisco.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://suportesispatri.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">Suporte Sispatri</span>
+                                    <span class="text-url">suportesispatri.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://sisalerta.cge.mg.gov.br" target="_blank">
+                                <div class="text-1">
+                                    <span class="titulo">SisAlerta</span>
+                                    <span class="text-url">sisalerta.cge.mg.gov.br</span>
+                                </div>
+
+                                <span class="material-symbols-outlined">
+                                    arrow_forward_ios
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-01">
+            <!---Rodape CGE-->
+            <h2>Controladoria - Geral do Estado</h2>
+            <h3>Diretoria De Tecnologia Da informação e Comunicação</h3>
+        </footer>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
